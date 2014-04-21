@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png">
+    <title>DingZing | 創意大觀園</title>
+    <link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" /><!--[if IE]><link href="/stylesheets/ie.css" media="screen" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script><![endif]--><meta content="DingZing" property="og:title">
+    <meta content="DingZing" property="og:site_name">
+    <meta content="http://localhost:3000" property="og:url">
+    <meta property="og:image">
+    <meta content="DingZing" property="og:description">
+    <meta property="og:type">
+    <meta property="fb:admins"><noscript>
+      <style type="text/css">
+        .es-carousel ul{
+          display: block;
+        }
+      </style>
+    </noscript>
+    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+      <div class="rg-image-wrapper">
+        <div class="rg-container">
+          <div class="rg-image">
+            <div class="story_img"></div>
+          </div>
+          <div class="rg-text"></div>
+        </div>
+        <div class="rg-loading"></div>
+        {{if itemsCount > 1}}
+        <div class="rg-image-nav">
+          <a class="rg-image-nav-prev" href="#"> Prev Image</a><a class="rg-image-nav-next" href="#"> Next Image</a>
+        </div>
+        {{/if}}
+      </div>
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2 class="logo">
+          <a href="/index.html"><strong>DingZing</strong></a>
+        </h2>
+        <div class="navigation">
+          <div class="navigation-inner"></div>
+          <ul class="main_navigation">
+            <li>
+              <a href="javascript:;">產品</a>
+              <ul class="sub_navigation nav multi-sub">
+                <li class="submenu-col">
+                  <dl>
+                    <dt>
+                      <a href="/tw/product/provecta_film/">Provecta Films</a>
+                    </dt>
+                    <dd>
+                      <a href="/tw/product/provecta_film/provecta_aromatic.html">Provecta Aromatic</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/provecta_film/provecta_aliphatic.html">Provecta Aliphatic</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/provecta_film/provecta_hot_melt.html">Provecta Hot Melt</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/provecta_film/provecta_tape.html">Provecta Tape</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/provecta_film/provecta_foam.html">Provecta Foam</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/provecta_film/provecta_bio.html">Provecta Bio</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/provecta_film/provecta_recycled.html">Provecta Recycled</a>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="submenu-col">
+                  <dl>
+                    <dt>
+                      <a href="/tw/product/orkesta_film/">Orkesta Films</a>
+                    </dt>
+                    <dd>
+                      <a href="/tw/product/orkesta_film/orkesta_composite.html">Orkesta Composite</a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <a href="/tw/product/advanta_film/">Advanta Films</a>
+                    </dt>
+                    <dd>
+                      <a href="/tw/product/advanta_film/advanta_breathable.html">Advanta Breathable</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/advanta_film/advanta_breathable_color.html">Advanta Breathable (Color)</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/advanta_film/advanta_breathable_print.html">Advanta Breathable (Print)</a>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="submenu-col">
+                  <dl>
+                    <dt>
+                      氣動管
+                    </dt>
+                    <dd>
+                      <a href="/tw/product/dz_air_hoses/tubular_film.html">扁狀管</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_air_hoses/straight.html">直管</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_air_hoses/multiple_straight.html">多孔管</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_air_hoses/recoil.html">捲管</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_air_hoses/braided.html">夾紗管</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_air_hoses/twin_braided.html">雙孔夾紗管</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_air_hoses/machinery.html">機械專用氣動管</a>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="submenu-col">
+                  <dl>
+                    <dt>
+                      鼎基輸送帶
+                    </dt>
+                    <dd>
+                      <a href="/tw/product/dz_belt/round_rough.html">圓帶[粗面]</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_belt/round_smooth.html">圓帶[光面]</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_belt/v_belt.html">V型輸送帶</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_belt/ridgetop.html">角型輸送帶</a>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="submenu-col">
+                  <dl>
+                    <dt>
+                      鼎基密封件
+                    </dt>
+                    <dd>
+                      <a href="/tw/product/dz_seals/piston_seals/">活塞專用密封件</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_seals/rod_seals/">活塞桿專用密封件</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_seals/piston_and_rod_seals/">活塞與活塞桿專用密封件</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_seals/rotary_seals/">旋轉密封件</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_seals/buffer_ring_seals/">緩衝密封件</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_seals/dust_wiper_seals/">往復用防塵密封件</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/product/dz_seals/metal_clad_wiper_seals/">往復用金屬骨架防塵密封件</a>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">應用</a>
+              <ul class="sub_navigation nav">
+                <li>
+                  <dl>
+                    <dd>
+                      <a href="/tw/applications/apparel.html">衣料</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/applications/automotive.html">汽車</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/applications/electronics.html">電子產品</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/applications/footwear.html">鞋類</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/applications/medical.html">醫療用品</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/applications/optical.html">光學產品</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/applications/outdoor.html">戶外 / 運動用品</a>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/innovation_playground/">創意大觀園</a>
+            </li>
+            <li>
+              <a href="/library/">知識庫</a>
+            </li>
+            <li>
+              <a href="javascript:;">公司介紹</a>
+              <ul class="sub_navigation nav">
+                <li>
+                  <dl>
+                    <dd>
+                      <a href="/tw/our_company/about_dingzing.html">關於鼎基</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/our_company/exhibition.html">展覽會</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/our_company/social_responsibility.html">社會責任</a>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">聯絡我們</a>
+              <ul class="sub_navigation nav">
+                <li>
+                  <dl>
+                    <dd>
+                      <a href="/tw/contact_us/headquarters_and_branch.html">全球辦事處</a>
+                    </dd>
+                    <dd>
+                      <a href="/tw/contact_us/distrbutor_and_agents.html">代理商與經銷商</a>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul class="lang">
+          <li>
+            <a href="http://tw.just-hire.me">中文</a>
+          </li>
+          <li>
+            <a href="http://just-hire.me">│ English</a>
+          </li>
+        </ul>
+      </div><div class="banner">
+        <img src="/images/banner_ch.jpg" />
+      </div>
+      <div class="banner2">
+        <p class="info1">
+          在創意大觀園可以交流想法、尋找各種可能性，並用鼎基的高科技膜來做實驗。這裡展示了各種集思廣益的創新發明－在這裡，我們用天馬行空的幻想設計創造出真實的幸福。
+        </p>
+        <p class="info2">
+          鼎基擁有豐富的專業知識，能提供高科技膜成分、材料、過程與製造等資訊，協助客戶開發出令人刮目相看的解決方案。鼎基的產品已激發出數百種驚艷業界的創新應用。創意大觀園帶你一窺究竟。
+        </p>
+      </div>
+      <div class="content">
+        <div class="rg-items" id="rg-items">
+          <div class="rg-thumbs">
+            <!--Elastislide Carousel Thumbnail Viewer-->
+            <div class="es-carousel-wrapper">
+              <div class="es-nav">
+                <span class="es-nav-prev">Previous</span><span class="es-nav-next">Next</span>
+              </div>
+              <div class="es-carousel">
+                <ul>
+                  <li>
+                    <a href="javascript:;"><span>輕巧無感，強韌無比</span><img data-large="/images/innovation/img_1_soccershoe.png" src="/images/innovation/01_soccershoe.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        輕巧無感，強韌無比
+                      </h4>
+                      <p class="second">
+                        為了打造出足球鞋界的霸主，領導球鞋廠商利用鼎基的高科技膜製造出功能獨霸天下，而且輕到令人忘了它存在的足球鞋。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo orkesta">
+                          Orkesta™
+                        </h5>
+                        <p class="product_info">
+                          利用Orkesta™ Composite 高科技膜做成強韌、堅固的外層，讓產品的時尚感輕盈得恰到好處。Orkesta™高科技膜是輕巧耐用型產品的最佳選擇。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2014</span><a href="/download/pdf/brochure/product_catalogue_2014.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>極致奢華，全面啟動</span><img data-large="/images/innovation/img_2_lumbar.png" src="/images/innovation/02_lumbar.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        極致奢華，全面啟動
+                      </h4>
+                      <p class="second">
+                        鼎基協助汽車業領導廠商，打造從裡到外散發極致華麗氣息的豪華汽車。因此，鼎基用高科技膜製造出頂級車墊的背部支撐系統骨架。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta_orkesta">
+                          Provecta™ | Orkesta™
+                        </h5>
+                        <p class="product_info">
+                          Provecta™ 高科技膜的高耐用性與防漏性很適合應用在充氣式按摩坐墊。鼎基Orkesta™ 高科技膜亦被廣泛用來製造時尚、耐用的汽車坐墊外層。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2014</span><a href="/download/pdf/brochure/product_catalogue_2014.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>天籟之音，可遇亦可求</span><img data-large="/images/innovation/img_3_speaker.png" src="/images/innovation/03_speaker.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        天籟之音，可遇亦可求
+                      </h4>
+                      <p class="second">
+                        音響玩家都知道喇叭內的材料會影響音效品質。因此，追求高品質與耐用性的製造商都選擇用鼎基的材料打造出高性能的音響。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta">
+                          Provecta™
+                        </h5>
+                        <p class="product_info">
+                          Provecta™ 高科技膜彈性十足，性能遠勝其他TPU膜。Provecta™高科技膜的堅固與耐用性能讓家用音響、智慧型手機與其他裝置持續放送高音質。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2014</span><a href="/download/pdf/brochure/product_catalogue_2014.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>腳踏世界，享受競速</span><img data-large="/images/innovation/img_4_snoeboard.png" src="/images/innovation/04_snowboard.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        腳踏世界，享受競速
+                      </h4>
+                      <p class="second">
+                        國際滑雪板大廠想在滑雪板上印製各種精心設計的圖案。在雙方共同的創意激盪下，鼎基開發出能在滑雪板上印出夢想中的圖案，以及不褪色的高科技膜。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta">
+                          Provecta™
+                        </h5>
+                        <p class="product_info">
+                          Provecta™ 高科技膜能真實呈現鮮豔色彩與細膩線條，是印製各種絢麗圖案的最佳材料。Provecta™ 高科技膜的耐用性是色彩與圖案永保鮮豔清晰的秘訣。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2014</span><a href="/download/pdf/brochure/product_catalogue_2014.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>醫療照護，事半功倍</span><img data-large="/images/innovation/img_5_medical_mattress.png" src="/images/innovation/05_medcial_mattress.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        醫療照護，事半功倍
+                      </h4>
+                      <p class="second">
+                        隨著醫療照護的發展，鼎基的高科技膜亦被應用在許多醫療用途上，例如醫療床墊等。鼎基的高科技膜也能嵌入生物感測器，未來將會是醫護人員看護病人的好幫手。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta">
+                          Provecta™
+                        </h5>
+                        <p class="product_info">
+                          Provecta™ 高科技膜的衛生、防水與耐用性是醫療產品的最佳選擇，同時也是內嵌生物感測器的最佳材料。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2014</span><a href="/download/pdf/brochure/product_catalogue_2014.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>科技上身，如影隨形</span><img data-large="/images/innovation/img_6_wearable.png" src="/images/innovation/06_wearable.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        科技上身，如影隨形
+                      </h4>
+                      <p class="second plh">
+                        穿戴式技術的未來已成定局，鼎基的高科技膜已廣泛應用在各種尖端穿戴式技術上，例如在高科技膜中嵌入生物感測器，並做成運動頭盔的緩衝墊，舒適感、耐用性、撞擊力監控都可一把抓。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta">
+                          Provecta™
+                        </h5>
+                        <p class="product_info plh">
+                          鼎基的高科技膜質輕耐用，是內嵌晶片與生物感測器的最佳媒介。鼎基的高科技膜防水又防汗，是製作運動用穿戴式裝置的最佳材料。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2014</span><a href="/download/pdf/brochure/product_catalogue_2014.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>致勝完美的射門</span><img data-large="/images/innovation/img_7_soccer_ball.png" src="/images/innovation/07_soccer_ball.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        致勝完美的射門
+                      </h4>
+                      <p class="second">
+                        經過某知名運動品牌的設計巧思，我們的 Provecta™ Adhesive 高科技膜化身為全球最先進的無接縫足球，不僅創造出新的踢球方式，更藉由科技與足球兩大元素的完美融合，塑造出頂級的黃金足球。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta">
+                          Provecta™
+                        </h5>
+                        <p class="product_info">
+                          Provecta™ 高科技膜可用熱熔膠方式貼合，能大幅減少生產過程中的裁剪和縫接步驟，因此可加速生產速度、降低勞工成本、增加營收利潤，並減少材料浪費。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2012</span><a href="/download/pdf/brochure/product_catalogue_tw.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>球鞋新革命</span><img data-large="/images/innovation/img_8_basketshoe.png" src="/images/innovation/08_basketball_shoe.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        球鞋新革命
+                      </h4>
+                      <p class="second">
+                        在鼎基協助下， 某大鞋廠使用我們的Provecta™ Adhesive 高科技膜，打造出全球第一雙無縫籃球鞋。Provecta™ Adhesive 高科技膜改寫了製鞋歷史。首創無縫籃球鞋的生產流程，更開啟了鞋業的新樂章。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta">
+                          Provecta™
+                        </h5>
+                        <p class="product_info">
+                          Provecta™ 高科技膜讓鞋子更輕巧、更耐穿。我們的薄膜生產技術也為頂級運動鞋樹立了新標竿。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2012</span><a href="/download/pdf/brochure/product_catalogue_tw.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>緊實不漏氣</span><img data-large="/images/innovation/img_9_airmattress.png" src="/images/innovation/09_air_mattress.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        緊實不漏氣
+                      </h4>
+                      <p class="second">
+                        Provecta™ 高科技膜無懈可擊的密合度，非常適用於製作氣墊、充氣船與救生衣。不論是一體成形的 Provecta™ 膜，或是與其他材料焊接，都能提供堅固、防漏的密合度。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta">
+                          Provecta™
+                        </h5>
+                        <p class="product_info">
+                          Provecta™ 高科技膜能與各種材質黏貼，不論是泡棉或布料，都能穩固密合，因此能應用在有氣密需求的產品。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2012</span><a href="/download/pdf/brochure/product_catalogue_tw.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>輕巧又犀利</span><img data-large="/images/innovation/img_10_camera.png" src="/images/innovation/10_camera.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        輕巧又犀利
+                      </h4>
+                      <p class="second">
+                        許多相機大廠已捨棄使用傳統PVC製造相機鏡頭，轉而投向 Provecta™ 高科技膜的懷抱，因為Provecta™ 高科技膜薄到讓人忘了它的存在，加上優異的阻光效果，讓相機邁向極致輕薄的新境界，鏡頭的縮放功能也大幅躍進。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta">
+                          Provecta™
+                        </h5>
+                        <p class="product_info">
+                          靠得住的輕巧。輕薄又有效。Provecta™ 高科技膜引發產品設計大革命，讓產品精巧化，卻又不失效能。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2012</span><a href="/download/pdf/brochure/product_catalogue_tw.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>緩震有一套</span><img data-large="/images/innovation/img_11_cushioning.png" src="/images/innovation/11_cushioning.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        緩震有一套
+                      </h4>
+                      <p class="second">
+                        運動用品領導廠商發揮創意，將 Provecta™ 高科技膜做成運動頭盔的避震襯墊，不僅能大幅降低震盪衝擊，還兼具衛生與透氣散熱的效果。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta">
+                          Provecta™
+                        </h5>
+                        <p class="product_info">
+                          Provecta™ 高科技膜具有卓越的韌性與耐用性，以及絕佳的抗菌功效，是運動用品與戶外器材的最佳選擇。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2012</span><a href="/download/pdf/brochure/product_catalogue_tw.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><span>療傷速見效</span><img data-large="/images/innovation/img_12_bandage.png" src="/images/innovation/12_bandage.png"></a>
+                    <div class="story_text">
+                      <h4>
+                        療傷速見效
+                      </h4>
+                      <p class="second">
+                        我們的醫療用薄膜與泡棉已廣泛應用在傷口治療上。使用Provecta™ 醫療用薄膜與泡棉製成的新型繃帶能吸收體液，同時讓傷口保持滋潤。Provecta™ 的保護功效與透氣性可加速傷口癒合。
+                      </p>
+                      <div class="product">
+                        <h5 class="logo provecta">
+                          Provecta™
+                        </h5>
+                        <p class="product_info">
+                          Provecta™ 高科技膜的柔軟度、高延展性與高透氣性無出其右，且不含導致皮膚過敏的塑化劑。因此，我們的醫療用薄膜與泡棉已被廣泛應用在傷口治療上。
+                        </p>
+                      </div>
+                      <div class="download">
+                        <h6>
+                          Download
+                        </h6>
+                        <span>創新領頭羊，「膜」出產業生命力 2012</span><a href="/download/pdf/brochure/product_catalogue_tw.pdf">下載型錄</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <ul class="footer_navigation nav" style="background:none;">
+          <li>
+            <dl>
+              <dt>
+                產品
+              </dt>
+              <dd>
+                <a href="/product/provecta_film/">Provecta Films</a>
+              </dd>
+              <dd>
+                <a href="/product/orkesta_film/">Orkesta Films</a>
+              </dd>
+              <dd>
+                <a href="/product/advanta_film/">Advanta Films</a>
+              </dd>
+              <dd>
+                <a href="/product/dz_air_hoses/tubular_film.html">氣動管</a>
+              </dd>
+              <dd>
+                <a href="/product/dz_belt/round_rough.html">鼎基輸送帶</a>
+              </dd>
+              <dd>
+                <a href="/product/dz_seals/piston_seals/">鼎基密封件</a>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>
+                應用
+              </dt>
+              <dd>
+                <a href="/applications/apparel.html">衣料</a>
+              </dd>
+              <dd>
+                <a href="/applications/automotive.html">汽車</a>
+              </dd>
+              <dd>
+                <a href="/applications/electronics.html">電子產品</a>
+              </dd>
+              <dd>
+                <a href="/applications/footwear.html">鞋類</a>
+              </dd>
+              <dd>
+                <a href="/applications/medical.html">醫療用品</a>
+              </dd>
+              <dd>
+                <a href="/applications/optical.html">光學產品</a>
+              </dd>
+              <dd>
+                <a href="/applications/outdoor.html">戶外 / 運動用品</a>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>
+                公司介紹
+              </dt>
+              <dd>
+                <a href="/our_company/about_dingzing.html">關於鼎基</a>
+              </dd>
+              <dd>
+                <a href="/our_company/exhibition.html">展覽會</a>
+              </dd>
+              <dd>
+                <a href="/our_company/social_responsibility.html">社會責任</a>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>
+                聯絡我們
+              </dt>
+              <dd>
+                <a href="/contact_us/headquarters_and_branch.html">全球辦事處</a>
+              </dd>
+              <dd>
+                <a href="/contact_us/distrbutor_and_agents.html">代理商與經銷商</a>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+        <div class="contact_us">
+          <h6>
+            與我們聯絡
+          </h6>
+          <p>
+            讓我們協助您挑選最合適的高科技膜。
+          </p>
+          <a class="clearfix" href="mailto:film@dingzing.com">film@dingzing.com</a>
+        </div>
+        <div class="copyright clearfix">
+          <p>
+            鼎基公司 © 2014 年版權所有，翻印必究.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/libs/tmpl/jquery.tmpl.min.js"></script>
+    <script src="/js/libs/easing/jquery.easing.1.3.js"></script>
+    <script src="/js/libs/elastislide/jquery.elastislide.js"></script>
+    <script src="/javascripts/innovation_playground.js"></script>
+    <script src="/javascripts/all.js"></script>
+    
+  </body>
+</html>
