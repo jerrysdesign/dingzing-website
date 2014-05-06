@@ -1,0 +1,240 @@
+.chromeframe {
+  font-size: 1.5em;
+  padding: 100px 50px;
+  background-color: #fff;
+  border: 10px solid  #fc3;
+  text-align: center;
+}
+
+.container{
+  max-width:1200px;
+  padding-left:0;
+  padding-right:0;
+  margin-left:auto;
+  margin-right:auto;
+  overflow:inherit;
+  width:1200px
+}
+.container:after{
+  content:"";
+  display:table;
+  clear:both
+}
+[href="#right"]{
+  visibility:hidden
+}
+.main{
+  width:800px
+}
+.show-right .main{
+  margin-left:0
+}
+.right{
+  width:400px;
+  margin-right:0
+}
+.show-right .right{
+  margin-right:0
+}
+.index{
+  padding:0
+}
+.right{
+  opacity:1
+}
+.swipe{
+  width:1200px;
+  height:400px
+}
+.sub_navigation {
+  background-color: #e3e3e3;
+}
+.banner_footer{
+  font-size:24px;
+  line-height:32px;
+  padding:20px 15%;
+  height:100px
+}
+.product .section{
+  width:285px;
+  float:left;
+  /*margin-right:-100%*/
+}
+.product .section{
+  padding-right:55px;
+  padding-left:30px
+} 
+.product .section1{
+  /*margin-left:0%;*/
+  clear:left;
+  margin-right:20px;
+}
+.product .section2{
+  /*margin-left:25.42373%;*/
+  clear:none;
+  margin-right:20px;
+}
+.product .section3{
+  /*margin-left:50.84746%;*/
+  clear:none;
+  margin-right:20px;
+}
+.product .section4{
+  /*margin-left:76.27119%;*/
+  clear:none;
+  margin-right: 0;
+  padding-right: 45px;
+}
+ 
+.dz .l18{
+  margin-left:15px
+}
+.story_text,.story_img{
+  width:600px;
+  height:550px
+}
+.story_text{
+  padding:60px
+}
+.story_text h4{
+  font-size:36px;
+  line-height:36px;
+  font-family:Klavika;
+  width:480px
+}
+.story_text .second{
+  font-size:1em;
+  line-height:1.5em;
+  margin-bottom:3.4375em;
+  margin-top:1.5625em
+}
+.story_text .download{
+  padding:30px 60px;
+  width:600px
+}
+.story_text .plh.second{
+  font-size:1em;
+  line-height:1.5em;
+  line-height:1.5em
+}
+.story_text .plh.product_info{
+  line-height:20px
+}
+.story_img{
+  background-image:url(../images/innovation/story_img.png);
+  height:550px
+}
+.rg-image-nav{
+  height:550px
+}
+
+
+.banner2{
+  height:180px;
+  padding:0 5%;
+  background-position:50% bottom
+}
+.banner2 p.info1{
+  font-size:20px;
+  line-height:32px;
+  width:40%;
+  float:left;
+  margin-top:30px
+}
+.banner2 p.info2{
+  font-size:1em;
+  line-height:1.5em;
+  width:40%;
+  float:right;
+  margin-top:30px
+}
+
+
+.headquarters .unit{
+  width:32.20339%;
+  float:left;
+  margin-right:1.69492%;
+  margin-right:-100%
+}
+.headquarters .unit:nth-child(3n+1){
+  margin-left:0%;
+  clear:left
+}
+.headquarters .unit:nth-child(3n+2){
+  margin-left:33.89831%;
+  clear:none
+}
+.headquarters .unit:nth-child(3n+3){
+  margin-left:67.79661%;
+  clear:none
+}
+
+
+.socialresponsibility .slogan p{
+  width:67%
+}
+
+
+.socialresponsibility h4,.socialresponsibility p{
+  float:none
+}
+
+.green-section{
+  width:30%;
+  margin-right:5%;
+  float:left
+}
+.green-section:last-child{
+  margin-right:0;
+  float:right
+}
+
+
+.logo{
+  margin:45px 35px 20px 30px;
+  margin-bottom:0
+}
+.logo a{
+  margin-bottom:7px
+}
+.navigation{
+  width:auto;
+  margin-top:56px;
+  border:none
+}
+.navigation,.navigation .navigation-inner{
+  border:none
+}
+.sub_navigation li dl{
+  margin:10px 16px
+}
+.sub_navigation.multi-sub{
+  width:auto
+}
+ul.lang{
+  top:80px
+}
+
+
+.footer{
+  width:100%;
+  float:left;
+  margin-right:1.69492%
+}
+.footer .footer_navigation{
+  width:66.10169%;
+  float:left;
+  margin-right:1.69492%;
+  background-color:none !important;
+  margin-bottom:0em
+}
+.footer .contact_us{
+  width:32.20339%;
+  float:right;
+  margin-right:0;
+  padding:26px 28px;
+  text-align:left
+}
+.footer .contact_us h6{
+  background-position:left 15px
+}
