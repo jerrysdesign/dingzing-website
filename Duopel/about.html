@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<title>About Duopel- duopel</title>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en">
+<meta name="title" content="about - duopel" />
+<meta name="description" content="about duopel" />
+<meta name="keywords" content="duopel, DingZing" />
+<meta name="thumbnail" content="" />
+<meta name="robots" content="all">
+<meta name="spiders" content="all">
+<meta name="webcrawlers" content="all">
+<meta name="revisit-after" content="7 days">
+<meta name="rating" content="general">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href="css/duopel-style.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+
+<!-- javascript -->
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/parallax.js" type="text/javascript"></script>
+<script src="js/animations.js"></script>
+<script src="js/jarallax-min-0.2.js" type="text/javascript"></script>
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+
+//parallax BG
+
+$(document).ready(function(){
+		$('.top_parallax').parallax("50%", 0.4);
+});
+
+//smooth scroll
+
+$(document).ready(function() {
+    $("a.topLink, a.contact_us, a.continue").on("click", function(event){ 
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 1000,
+            easing: "swing"
+        });
+        return false;       
+    });
+
+});
+
+//shrink header
+
+$(function(){
+ var shrinkHeader = 100;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('#tophead').addClass('shrink');
+        }
+        else {
+            $('#tophead').removeClass('shrink');
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset;
+    }
+
+});
+
+//rising footer with fade in/out mask
+
+$(function() {
+	$(window).scroll(function(){
+		var distanceTop = $('#last').offset().top - $(window).height();
+		
+		if  ($(window).scrollTop() > distanceTop) {
+			$('#rising').animate({'bottom':'0px'},500);
+			$("#overlay").fadeTo(800, 0.5);
+			$("#about, #fabrics").removeClass('active');
+			$("#contact").addClass('underline');
+			
+	} else {
+			$('#rising').stop(true).animate({'bottom':'-600px'},100);
+			$("#overlay").fadeOut(800).css("display", "none");
+			$("#about").addClass('active')
+			$("#contact").removeClass('underline') }
+	});
+	
+});
+
+</script>
+
+</head>
+
+<body onLoad="init()">
+
+<!-- header -->
+<header id="tophead">
+<hgroup>
+<h1 id="logo"><a href="about.html" title="duopel">duopel</a></h1>
+<nav>
+<ul>
+	<li id="about" class="active"><a href="about.html">About Duopel</a></li>
+    <li id="fabrics"><a href="fabrics.html">Duopel Series</a></li>
+    <li id="contact"><a href="about.html#contact_us" class="contact_us">Contact Us</a></li>
+</ul>
+</nav>
+</hgroup>
+</header>
+
+<section class="top_parallax"><a id="gotop"></a>
+<div class="topshadow"></div>
+
+<div class="container">
+<h2 id="ttl1">Do more with Duopel.</h2>
+</div>
+
+</section>
+
+<!-- intro 1 -->
+<section class="intro clearfix" id="start_here">
+
+<div class="container">
+<div class="arrow_down" id="continue"><a href="about.html#start_here" class="continue">scroll down</a></div>
+<p class="left">Duopel is an exclusive waterproof-breathable technology that is available as a finished fabric solution for sportswear, active wear, and lifestyle clothing brands.</p>
+<p class="right">Duopel is transforming the waterproof-breathable fabric space by giving designers a whole new range of design options.</p>
+</div>
+
+</section>
+
+<section class="animation_1">
+
+<div class="container clearfix">
+
+      <h2 id="ttl2">Do more with color.</h2>
+      
+      <div id="color_jackets">
+      <ul>
+      <li><img src="images/0-jacketR1-1.png" width="171" height="229"></li>
+      <li id="jacket4"><img src="images/1-jacketR1-2.png" width="171" height="229"></li>
+      <li id="jacket3"><img src="images/2-jacketR1-3.png" width="171" height="229"></li>
+      <li><img src="images/3-jacketR1-4.png" width="171" height="229"></li>
+      <li><img src="images/4-jacketR1-5.png" width="171" height="229"></li>
+      <li><img src="images/5-jacketR1-6.png" width="171" height="229"></li>
+      </ul>
+      
+      <ul>
+      <li id="jacket1"><img src="images/6-jacketR2-1.png" width="171" height="229"></li>
+      <li id="jacket5"><img src="images/7-jacketR2-2.png" width="171" height="229"></li>
+      <li><img src="images/8-jacketR2-3.png" width="171" height="229"></li>
+      <li id="jacket2" style="margin-left:417px;"><img src="images/9-jacketR2-4.png" width="171" height="229"></li>
+      </ul>
+      
+      <ul>
+      <li id="jacket8"><img src="images/10-jacketR3-1.png" width="171" height="229"></li>
+      <li><img src="images/11-jacketR3-2.png" width="171" height="229"></li>
+      <li id="jacket6"><img src="images/12-jacketR3-3.png" width="171" height="229"></li>
+      <li id="jacket9"><img src="images/13-jacketR3-4.png" width="171" height="229"></li>
+      <li><img src="images/14-jacketR3-5.png" width="171" height="229"></li>
+      <li id="jacket7"><img src="images/15-jacketR3-6.png" width="171" height="229"></li>
+      </ul>
+      
+      <ul>
+      <li id="jacket11"><img src="images/16-jacketR4-1.png" width="171" height="229"></li>
+      <li><img src="images/17-jacketR4-2.png" width="171" height="229"></li>
+      <li id="jacket10"><img src="images/18-jacketR4-3.png" width="171" height="229"></li>
+      <li><img src="images/19-jacketR4-4.png" width="171" height="229"></li>
+      <li><img src="images/20-jacketR4-5.png" width="171" height="229"></li>
+      <li id="jacket12"><img src="images/21-jacketR4-6.png" width="171" height="229"></li>
+      </ul>
+      
+      </div>
+</div>
+
+</section>
+
+<!-- intro 2 -->
+<section class="intro clearfix">
+<div class="container">
+<p>Duopel fabrics are available in every color, from classic black to neon pink.<br />
+Completely customizable, Duopel lets you create more with color.</p>
+</div>
+</section>
+
+<section class="animation_2">
+
+    <div class="container">
+      <h2 id="ttl3">Do more with graphics.</h2>
+      <div id="floatjacket">
+	  <div id="float1"><img src="images/float_jacket01.png" width="732" height="468"></div>
+      <div id="float2"><img src="images/float_jacket02.png" width="623" height="562"></div>
+      <div id="float3"><img src="images/float_jacket03.png" width="809" height="741"></div>
+      <div id="float4"><img src="images/float_jacket04.png" width="1087" height="596"></div>
+      <div id="float5"><img src="images/float_jacket05.png" width="522" height="336"></div>
+      </div>  
+    </div>
+
+</section>
+
+<!-- intro 3 -->
+<section class="intro clearfix">
+<div class="container">
+<p>With Duopel fabrics, inner layers come to life with patterns and prints. Stripes, checks,<br />
+  polka dots, and customizable graphics are just a few of the millions of possibilities.</p>
+</div>
+</section>
+
+<section class="animation_3">
+
+    <div class="container">
+      <h2 id="ttl4">Do more with textiles.</h2>
+      <div id="standjacket">
+      <div id="stand1"><img src="images/stand_jacket01.png" width="282" height="425"></div>
+      <div id="stand2"><img src="images/stand_jacket02.png" width="491" height="407"></div>
+      <div id="stand3"><img src="images/stand_jacket03.png" width="466" height="651"></div>
+      <div id="stand4"><img src="images/stand_jacket04.png" width="369" height="462"></div>
+      <div id="stand5"><img src="images/stand_jacket05.png" width="255" height="314"></div>
+      <div id="stand6"><img src="images/stand_jacket06.png" width="326" height="533"></div>
+    </div>
+
+</section>
+
+<!-- intro 4 -->
+<section class="intro clearfix">
+<div class="container">
+<p>For a distinctive look and feel, Duopel fabrics are available in a wide range of<br />textiles, from synthetic to natural fabrics. Choose from our available lines, or<br />work with us to customize designs with the textile of your choice.</p>
+</div>
+</section>
+
+<!-- contact -->
+<section class="discussion" style="padding-bottom:480px;">
+    <div class="container clearfix">
+    <div class="left">
+	<h3 class="ttls">Duopel delivers more possibilities.</h3>
+	<p>Duopel is a completely customizable waterproof- breathable fabric. In the Innovation Playground, we work closely together with our clients to create waterproof-breathable fabric solutions that best suit their personality, style, needs, and applications.
+	</p>
+    </div>
+    
+<div class="visual01 right"></div>
+</div>
+
+<a id="last"></a><a id="contact_us"></a>
+</section>
+
+<!-- footer -->
+
+<footer>
+
+<div id="overlay"></div>
+<div id="rising">
+
+<div class="container clearfix">
+<div class="arrow_up"><a href="about.html#gotop" class="topLink">scroll up</a></div>
+<div class="footerimg"></div>
+<div class="contact">
+<p><strong><a href="../index.html">DingZing Corporation</a></strong>
+No.8-1, Pei-Lin Road, Hsiao-Kang District,<br />
+Kaohsiung 812, Taiwan.<br />
+<a href="mailto:Info@duopel.com">Info@duopel.com</a></p>
+</div>
+
+<h3>Got your own idea?</h3>
+<p>Just bring us a swatch. Or let us<br >
+tell you what works best.</p>
+</div>
+
+<div class="copyright">© DingZing Corporation. All Rights Reserved. Duopel® is a registered trademarks of DingZing Corporation.</div>
+</div>
+
+</footer>
+
+<!--<div id="slidebox">
+    <a class="close"></a>
+    <p>More in Technology & Science (4 of 23 articles)</p>
+    <h2>The Social Impact of Scientific Research and new Technologies</h2>
+    <a class="more">Read More »</a>
+</div>-->
+
+
+</body>
+</html>

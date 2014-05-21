@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<title>Duopel Fabrics - duopel</title>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en">
+<meta name="title" content="about - duopel" />
+<meta name="description" content="about duopel" />
+<meta name="keywords" content="duopel, DingZing" />
+<meta name="thumbnail" content="" />
+<meta name="robots" content="all">
+<meta name="spiders" content="all">
+<meta name="webcrawlers" content="all">
+<meta name="revisit-after" content="7 days">
+<meta name="rating" content="general">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href="css/duopel-style.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+
+<!-- javascript -->
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/parallax.js" type="text/javascript"></script>
+<script src="js/animations.js"></script>
+<script src="js/jarallax-min-0.2.js" type="text/javascript"></script>
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+
+//parallax BG
+
+$(document).ready(function(){
+		$('.top_parallax').parallax("50%", 0.4);
+		$('.second_parallax').parallax("50%", 0.4);
+		$('.third_parallax').parallax("50%", 0.4);
+		$('.fourth_parallax').parallax("50%", 0.4);
+});
+
+//smooth scroll
+
+$(document).ready(function() {
+    $("a.topLink, a.contact_us, a.continue").on("click", function(event){ 
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 1000,
+            easing: "swing"
+        });
+        return false;       
+    });
+
+});
+
+//shrink header
+
+$(function(){
+ var shrinkHeader = 100;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('#tophead').addClass('shrink');
+        }
+        else {
+            $('#tophead').removeClass('shrink');
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset;
+    }
+
+});
+
+//rising footer with fade in/out mask
+
+$(function() {
+	$(window).scroll(function(){
+		var distanceTop = $('#last').offset().top - $(window).height();
+		
+		if  ($(window).scrollTop() > distanceTop) {
+			$('#rising').animate({'bottom':'0px'},500);
+			$("#overlay").fadeTo(800, 0.5);
+			$("#about, #fabrics").removeClass('active');
+			$("#contact").addClass('underline');
+			$("#runner").addClass('opacity');
+			
+	} else {
+			$('#rising').stop(true).animate({'bottom':'-600px'},100);
+			$("#overlay").fadeOut(800).css("display", "none");
+			$("#fabrics").addClass('active');
+			$("#contact").removeClass('underline');
+			$("#runner").removeClass('opacity')  }	
+	});
+	
+});
+
+</script>
+
+</head>
+
+<body onLoad="init()">
+
+<!-- header -->
+<header id="tophead">
+<hgroup>
+<h1 id="logo"><a href="about.html" title="duopel">duopel</a></h1>
+<nav>
+<ul>
+	<li id="about"><a href="about.html">About Duopel</a></li>
+    <li id="fabrics" class="active"><a href="fabrics.html">Duopel Series</a></li>
+    <li id="contact"><a href="fabrics.html#contact_us" class="contact_us">Contact Us</a></li>
+</ul>
+</nav>
+</hgroup>
+</header>
+
+<section class="animation_4"><a id="gotop"></a>
+
+<div class="container clearfix">
+
+<!-- rain animation -->
+<div class="rain_area">
+<div class="yellowrain xlarge" id="drop1"></div>
+<div class="yellowrain xlarge" id="drop2"></div>
+<div class="yellowrain large" id="drop3"></div>
+<div class="yellowrain medium" id="drop4"></div>
+<div class="yellowrain medium" id="drop5"></div>
+<div class="yellowrain medium" id="drop6"></div>
+<div class="yellowrain small" id="drop7"></div>
+<div class="yellowrain xsmall" id="drop8"></div>
+<div class="yellowrain xsmall" id="drop9"></div>
+</div>
+
+<div class="left">
+<h3>The Duopel membrane, used in Duopel fabrics, is an exclusive waterproof-breathable technology made from thermoplastic polyurethane (TPU). It delivers distinct advantages over other waterproof-breathable materials in use today.</h3>
+<div id="rain1"></div>
+<div id="rain2"></div>
+<div id="rain3"></div>
+</div>
+
+<div class="right">
+<p>
+The Duopel membrane is a printable material, and the membrane itself can be produced in various colors.</p>
+<p>The Duopel membrane has excellent adhesive properties, and it can be easily laminated to a wide variety of textiles.</p>
+<p>The Duopel membrane is eco-friendly. It is fully recyclable and biodegradable, and it can serve as an excellent replacement for the environmentally contentious ePTFE (a.k.a., Teflon)</p>
+</div>
+</div>
+
+</section>
+
+<section>
+<div class="container noneheight">
+<div class="arrow_down" id="continue"><a href="fabrics.html#start_here" class="continue">scroll down</a></div>
+</div>
+</section>
+
+<!-- parallax 1 -->
+<section class="second_parallax clearfix"><img src="images/parallax_img1_fix.jpg"></section>
+
+
+<!-- intro 1 -->
+<section class="animation_5 clearfix" id="start_here">
+    <div class="container">
+    <div class="left_narrow">
+    <h3>Duopel fabric is the most balanced waterproof-breathable fabric solution in the indystry, with advanced windproof protection thrown in for good measure.</h3>
+    </div>
+    
+    <div class="right_wide">
+    <div class="materials clearfix">
+    <span id="material1"><img src="images/material_1.png" width="160" height="125"></span>
+    <p><strong style="padding-top:0;">Always dry.</strong>
+    Duopel fabric has achieved the industry’s standard waterproof rating requirement, which means water stays out and wearers<br />stay dry.</p>
+    </div>
+    
+    <div class="materials clearfix">
+    <span id="material2"><img src="images/material_2.png" width="160" height="125"></span>
+    <p><strong>Always comfortable.</strong>
+    Duopel fabric allows moisture to pass through quickly and effectively, providing optimal comfort for wearers involved in any activity, at every level of intensity.</p>
+    </div>
+    
+    <div class="materials clearfix">
+    <span id="material3"><img src="images/material_3.png" width="160" height="125"></span>
+    <p><strong>Always the right temperature.</strong>
+    Duopel fabric excels at blocking wind, ensuring wearers enjoy consistent comfort at just the right temperature.</p>
+    </div>
+    </div>
+    
+    </div>
+</section>
+
+<!-- parallax 2 -->
+<section class="third_parallax clearfix"><img src="images/parallax_img2_fix.jpg"></section>
+
+
+<section class="animation_6">
+    <div class="container">
+    <h3>Duopel fabrics come in different layering constructions to meet<br />
+the needs of different garments.</h3>
+	<ul class="clearfix">
+    <li><strong>2-Layer laminate</strong>
+    This basic layering system is used to create light Duopel fabrics that are suitable for casual wear.
+    <div id="descript1"><img src="images/descript_1.png" width="200" height="166"></div>
+    <div id="laminate1"><img src="images/laminate_1.png" width="200" height="142"></div>
+    </li>
+    
+    <li><strong>3-Layer laminate</strong>
+    Extra layering with mesh at the base produces Duopel fabrics that are ideal for active sportswear.
+    <div id="descript2"><img src="images/descript_2.png" width="204" height="166"></div>
+    <div id="laminate2"><img src="images/laminate_2.png" width="200" height="142"></div>
+    </li>
+    
+    <li><strong>2.5-Layer laminate</strong>
+    Printed membrane layering creates unique Duopel fabrics that are perfect for fashionable waterproof wear.
+    <div id="descript3"><img src="images/descript_3.png" width="177" height="166"></div>
+    <div id="laminate3"><img src="images/laminate_3.png" width="200" height="142"></div>
+    </li>
+    
+    <li><strong>Reversed 2.5-Layer laminate</strong>
+    Layering with a printed membrane as the face fabric produces stylish Duopel fabrics that are well-suited for reversible, two-way wear.
+    <div id="descript4"><img src="images/descript_4.png" width="188" height="166"></div>
+    <div id="laminate4"><img src="images/laminate_4.png" width="200" height="142"></div>
+    </li>
+    </ul>
+    </div>
+</section>
+
+
+<!-- parallax 3 -->
+<section class="fourth_parallax clearfix"><img src="images/parallax_img3_fix.jpg"></section>
+
+<!-- contact -->
+<section class="discussion" style="padding-bottom:600px;">
+    <div class="container clearfix">
+    <div class="left">
+	<h3 class="ttls2">Duopel  are available for sportswear, lifestyle and fashion. </h3>
+	<p><strong>Duopel Active</strong>
+    Multilayer fabric construction for sports applications used under extreme weather conditions. Available in unlimited textile and membrane choices. </p>
+    <p><strong>Duopel Urban </strong>
+Simple fabric construction for daily lifestyle wear, with unlimited textile and membrane color possibilities to create sophicated urban style looks. </p>
+	<p><strong>Duopel Mode </strong>
+    Fabric construction with a touch of luxury , for enhanced look and feel. With stylish prints and colors, these fabrics make a fashion statement. </p>
+    </div>
+    
+<div class="visual02 right" id="runner"><img src="images/img_runner.png" width="489" height="475"></div>
+</div>
+
+<a id="last"></a><a id="contact_us"></a>
+</section>
+
+<!-- footer -->
+
+<footer>
+
+<div id="overlay"></div>
+<div id="rising">
+
+<div class="container clearfix">
+<div class="arrow_up"><a href="fabrics.html#gotop" class="topLink">scroll up</a></div>
+<div class="footerimg"></div>
+<div class="contact">
+<p><strong><a href="http://www.dingzing.com">DingZing Corporation</a></strong>
+No.8-1, Pei-Lin Road, Hsiao-Kang District,<br />
+Kaohsiung 812, Taiwan.<br />
+<a href="mailto:Info@duopel.com">Info@duopel.com</a></p>
+</div>
+
+<h3>Got your own idea?</h3>
+<p>Just bring us a swatch. Or let us<br >
+tell you what works best.</p>
+</div>
+
+<div class="copyright">© DingZing Corporation. All Rights Reserved. Duopel® is a registered trademarks of DingZing Corporation.</div>
+</div>
+
+</footer>
+
+<!--<div id="slidebox">
+    <a class="close"></a>
+    <p>More in Technology & Science (4 of 23 articles)</p>
+    <h2>The Social Impact of Scientific Research and new Technologies</h2>
+    <a class="more">Read More »</a>
+</div>-->
+
+
+</body>
+</html>
